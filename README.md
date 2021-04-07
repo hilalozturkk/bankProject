@@ -1,10 +1,10 @@
 # BANKA PROJESİ
 #### Tasarım desenleri için yaptığım ilk örnek 
->### Kullandığım desenler 
+### Kullandığım desenler 
 
-  >> **Strategy Pattern**
+  > **Strategy Pattern**
   
-  >> **Factory Pattern**
+  > **Factory Pattern**
 
  ### Ayrıntılar :
 ---
