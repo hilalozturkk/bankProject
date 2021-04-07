@@ -89,42 +89,41 @@ public class Demo {
                 KartTipi kartTipi = sf.getKartTipi("Kredi Kartı");
                 kartTipi.maas(kisiler2.bakiye);
                 if (i == 1) {
-                System.out
-                .println("Bilgileriniz:\n" + "İsim:" + kisiler2.name + "\nSoyİsim:" + kisiler2.soyIsim);
-                System.out.println("Mevcut bakiyeniz:" + kisiler2.bakiye + "\n"
-                + "Yapmak istediğiniz işlemi seçin:\nPara yatırmak için 1'e\n"
-                + "Para çekmek için 2'ye basınız.\n" + "Para transferi için 3'e basınız.\n"
-                + "Taksit ile ödeme yapmak için 4'e basınız.\n");
-                islemSec = scanner.nextInt();
-                if (islemSec == 1) {
-                System.out.println("Yatirmak istediğiniz tutarı giriniz.");
-                paraYatirmaTutari = scanner.nextDouble();
+                    System.out.println("Bilgileriniz:\n" + "İsim:" + kisiler2.name + "\nSoyİsim:" + kisiler2.soyIsim);
+                    System.out.println("Mevcut bakiyeniz:" + kisiler2.bakiye + "\n"
+                    + "Yapmak istediğiniz işlemi seçin:\nPara yatırmak için 1'e\n"
+                    + "Para çekmek için 2'ye basınız.\n" + "Para transferi için 3'e basınız.\n"
+                    + "Taksit ile ödeme yapmak için 4'e basınız.\n");
+                    islemSec = scanner.nextInt();
+                    if (islemSec == 1) {
+                        System.out.println("Yatirmak istediğiniz tutarı giriniz.");
+                        paraYatirmaTutari = scanner.nextDouble();
 
-                System.out.println("Yatırılan tutar:" + paraYatirmaTutari + "\nToplam bakiye:"
-                + durum1.kredi(kisiler2.bakiye, paraYatirmaTutari));
-
-                } 
-                else if (islemSec == 2) {
-                    System.out.println("Çekmek istediğiniz tutarı giriniz.");
-                    paraCekme = scanner.nextDouble();
-
-                    System.out.println("Çekilen tutar:" + paraCekme + "\nToplam bakiye:"
-                    + durum.kredi(kisiler2.bakiye, paraCekme));
+                        System.out.println("Yatırılan tutar:" + paraYatirmaTutari + "\nToplam bakiye:"
+                        + durum1.kredi(kisiler2.bakiye, paraYatirmaTutari));
 
                     } 
-                else if (islemSec == 3) {
-                    System.out.println("Transfer etmek istediğiniz tutarı giriniz.");
-                    paraTransfer = scanner.nextDouble();
+                    else if (islemSec == 2) {
+                        System.out.println("Çekmek istediğiniz tutarı giriniz.");
+                        paraCekme = scanner.nextDouble();
 
-                    durum2.kredi(kisiler2.bakiye, paraTransfer);
+                        System.out.println("Çekilen tutar:" + paraCekme + "\nToplam bakiye:"
+                        + durum.kredi(kisiler2.bakiye, paraCekme));
 
-                    } 
-                else if (islemSec == 4) {
-                    System.out.println("Taksitle ödenecek tutar giriniz.");
-                    taksitliparatransfer = scanner.nextDouble();
+                        } 
+                    else if (islemSec == 3) {
+                        System.out.println("Transfer etmek istediğiniz tutarı giriniz.");
+                        paraTransfer = scanner.nextDouble();
 
-                    durum3.kredi(kisiler2.bakiye, taksitliparatransfer);
-                    }
+                        durum2.kredi(kisiler2.bakiye, paraTransfer);
+
+                         } 
+                    else if (islemSec == 4) {
+                        System.out.println("Taksitle ödenecek tutar giriniz.");
+                        taksitliparatransfer = scanner.nextDouble();
+
+                        durum3.kredi(kisiler2.bakiye, taksitliparatransfer);
+                        }
                     } 
                     
                 else {
